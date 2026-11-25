@@ -1,0 +1,32 @@
+### 1. View Semua Mahasiswa
+GET http://localhost:3000/students
+
+### 1b. Filter Mahasiswa berdasarkan Status (where)
+GET http://localhost:3000/students?status=Hadir
+
+### 1c. Statistik Presensi Mahasiswa (count)
+GET http://localhost:3000/students/stats
+
+### 2. View 1 Mahasiswa berdasarkan ID
+GET http://localhost:3000/students/1
+
+### 3. Tambah Mahasiswa Baru
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "nim": "103022400010",
+  "nama": "Ando",
+  "status": "Hadir"
+}
+
+### 4. Update Mahasiswa
+PATCH http://localhost:3000/students/1
+Content-Type: application/json
+
+{
+  "status": "Izin"
+}
+
+### 5. Hapus Mahasiswa
+DELETE http://localhost:3000/students/1

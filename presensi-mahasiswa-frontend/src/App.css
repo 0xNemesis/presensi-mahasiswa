@@ -1,0 +1,78 @@
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.ringkasan {
+  display: flex;
+  justify-content: space-between;
+  background: #f0f4f8;
+  color: #222;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.ringkasan p {
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.form input {
+  flex: 1;
+  min-width: 0;
+}
+
+.form input,
+.form select,
+.form button {
+  padding: 8px;
+}
+
+.daftar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kartu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+
+.kartu h3,
+.kartu p {
+  margin: 0;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.status-hadir { background: #2e9e4f; }
+.status-izin { background: #2a7de1; }
+.status-sakit { background: #e0a100; }
+.status-alpha { background: #d93a3a; }
+
+.kosong {
+  text-align: center;
+  color: #777;
+}
